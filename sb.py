@@ -17,7 +17,7 @@ botStart = time.time()
 #line = LINE('EAgPrcs0GgsnBmn0ZaVf.eKNgao1xe5yDQlJaV5UJ+W.D5OZPSxOS/P24d673jWMB/aiT5wDCyiMZfUN8n6ys8c=')
 #line.log("Auth Token : " + str(line.authToken))
 line = LINE("")
-line.log("Auth Token : " + str(cl.authToken))
+line.log("Auth Token : " + str(line.authToken))
 line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 
 print ("Login Succes")
