@@ -14,7 +14,7 @@ botStart = time.time()
 #==============================================================================#
 #line = LINE()
 #line = LINE("เมล","พาส")
-line = LINE('EuLqsvDdB1hQBCHG7Ak3.TAVOkm2wqPizxdXz1JiGmW.WqjdmfB4EUijhQ86TRAZjLf7XHz5LeoRQKHR0wseDPg=')
+line = LINE('EAgPrcs0GgsnBmn0ZaVf.eKNgao1xe5yDQlJaV5UJ+W.D5OZPSxOS/P24d673jWMB/aiT5wDCyiMZfUN8n6ys8c=')
 line.log("Auth Token : " + str(line.authToken))
 line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 
@@ -35,8 +35,8 @@ Exc = [line]
 lineMID = line.getProfile().mid
 bot1 = line.getProfile().mid
 RfuBot=[lineMID]
-Family=["ub5abe828cd964292195c3c59d6322033",lineMID]
-admin=['ub5abe828cd964292195c3c59d6322033',lineMID]
+Family=["u1249c600ed5713961da8b8c0bf9ba3ff",lineMID]
+admin=['u1249c600ed5713961da8b8c0bf9ba3ff',lineMID]
 RfuFamily = RfuBot + Family
 
 protectname = []
@@ -50,9 +50,9 @@ targets = []
 msg_dict = {}
 
 settings = {
-    "autoAdd": False,
-    "autoJoin": True,
-    'autoCancel':{"on":True,"members":10},	
+    "autoAdd": True,
+    "autoJoin": False,
+    'autoCancel':{"on":True,"members":10000},	
     "autoLeave": True,
     "autoRead": False,
     "leaveRoom": False,
@@ -73,9 +73,9 @@ settings = {
     "winvite": False,
     "wblacklist": False,
     "dblacklist": False,
-    "gift":False,
-    "likeOn":False,
-    "timeline":False,
+    "gift":True,
+    "likeOn":True,
+    "timeline":True,
     "commentOn":True,
     "commentBlack":{},
     "wblack": False,
@@ -85,13 +85,13 @@ settings = {
     "cNames":"",
     "changeGroupPicture": [],
     "changePictureProfile":False,
-    "unsendMessage": False,
+    "unsendMessage": True,
     "autoJoinTicket": False,
-    "welcome":"🙏สวีสดีครับคนมาใหม่🙏",
-    "kick":"😱อุ๊ต๊ะ😱",
-    "bye":"🙌บาย..",
+    "welcome":"🙏ʜᴇʟʟᴏ ᴡᴇʟᴄᴏᴍᴇ 🙏",
+    "kick":"😱ғᴜᴄᴋ😱",
+    "bye":"🙌ʙʏᴇ..",
     "Respontag":"😳",
-    "eror":"คุณใช้คำสั่งผิด กรุณาศึกษาวิธีใช้ หรือสอบถามกับผู้สร้าง โดยพิมคำสั่ง *.ผส*เพื่อแสดง คท ของผู้สร้าง",
+    "eror":"ᴇʀʀᴏʀʀʀʀ",
     "spam":{},
     "invite": {},
     "winvite": False,
@@ -99,8 +99,8 @@ settings = {
     "pname": {},
     "pro_name": {},
     "message1":"รับแก้ไฟล์+เพิ่มไฟล์+แก้ภาษา\n💝ราคาดูที่หน้างาน💝\n👉มีบริการให้เช่าบอทSAMURAI\nราคา300บาทต่อเดือน💖\n#เพิ่มคิกเกอร์ตัวละ100👌\n🎀สนใจรีบทัก..บอทpython3ฟังชั่นล้นหลาม🎁กำลังรอให้คุณเป็นเจ้าของ\n(ผมจะอยู่ที่ห้องนี้แค่15นาทีนะจ๊ะ)\nselfbot by:\n╔══════════════┓\n╠™❍✯͜͡RED™SAMURAI✯͜͡❂➣ \n╚══════════════┛",
-    "message":"บัญชีนี้ถูกป้องกันโดย Selfbot By ™❍✯͜͡RED™SAMURI✯͜͡❂➣ระบบได้ทำการบล็อคคุณอัตโนมัติเนื่องจากคุณยังไม่ได้ยืนยันตัวตนกับผู้สร้างบอท\nสามารถยืนตัวตนได้ง่ายโดยการพิม unblockกับ™❍✯͜͡RED™SAMURI✯͜͡❂➣ระบบจะทำการปลดบล็อคท่านโดยอัตโนมัต",
-    "comment":"""🎋RED BOT LINE THAILAND🎋
+    "message":"บัญชีนี้ถูกป้องกันโดย Selfbot By ™❍✯͜͡RED™ᴀʟɪsʜ ᴊᴏᴋᴇʀ✯͜͡❂➣ระบบได้ทำการบล็อคคุณอัตโนมัติเนื่องจากคุณยังไม่ได้ยืนยันตัวตนกับผู้สร้างบอท\nสามารถยืนตัวตนได้ง่ายโดยการพิม unblockกับ™❍✯͜͡RED™SAMURI✯͜͡❂➣ระบบจะทำการปลดบล็อคท่านโดยอัตโนมัต",
+    "comment":"""🎋RED BOT LINE ALISH JOKER🎋
     ─┅═✥👊ᵀᴴᴬᴵᴸᴬᴺᴰ👊✥═┅─ 
   💀[RED SAMURAI SELFBOT]💀 
 🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁🎁
@@ -162,9 +162,9 @@ selfbot by:
 แล้วค่อยมาคุยกันถึงรายระเอียดของสินค้า
 อยากได้เสปกแบบใหนราคาเท่าไหร่..เรามีหมด
 ทักมาได้ที่  👇👇👇👇👇👇👇👇👇
-- https://line.me/ti/p/samuri5
+- https://line.me/ti/p/infoalish
 หรือโทรมาได้ที่เบอร์นี้👇👇👇👇👇👇
-- 094 634 5913
+
 ขอแสดงความนับถือ
 จากทีมงาน SAMURAI ทุกคน""",
 
@@ -891,7 +891,7 @@ def lineBot(op):
                 elif text.lower() == '.ข้อมูล':
                     try:
                         arr = []
-                        owner = "ub5abe828cd964292195c3c59d6322033"
+                        owner = "u1249c600ed5713961da8b8c0bf9ba3ff"
                         creator = line.getContact(owner)
                         contact = line.getContact(lineMID)
                         grouplist = line.getGroupIdsJoined()
